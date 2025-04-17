@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="favicon" href="assets/images/favicon.png">
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public_holiday.css">
+    
+    
+	<title> Leave Insertion Page</title>
+</head>
+<body>
+    <h1 id="heading" >USER REGISTERATION </h1>
+<div class="container">
+    <form action="user_register.php" method="post" >
+        <div class="row">
+            <div class="col-25">
+              <label for="fname">Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="username" name="username" placeholder="jalil ahmed" >
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Designation</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="designation" name="designation" placeholder="IT Manager" >
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Scale</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="scale" name="scale" placeholder="17"  min="1" max="22">
+              </div>
+          </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Biometric ID</label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="bio_id" name="bio_id" placeholder="2" min="1">
+        </div>
+      </div>
+     
+      <div class="row">
+        <input type="submit" value="submit" name="submit">
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

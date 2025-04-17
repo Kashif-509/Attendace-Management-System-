@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="favicon" href="assets/images/favicon.png">
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public_holiday.css">
+    
+    
+	<title> Leave Insertion Page</title>
+</head>
+<body>
+    <h1 id="heading" >LEAVE INSERTION </h1>
+<div class="container">
+    <form action="leave_insert.php" method="post" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-25">
+              <label for="fname">Name</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="username" name="username" placeholder="jalil ahmed" >
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="fname">Leave Type</label>
+            </div>
+            <div class="col-75">
+              <select id="leave_type" name="leave_type" placeholder="IT Manager" >
+                <option value="Casual">Casual</option>
+                <option value="Earned">Earned</option>
+                <option value="Paternity">Paternity</option>
+                <option value="Maternity">Maternity</option>
+                <option value="Medical">Medical</option>
+                <option value="Other">Other</option>
+              </select>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-25">
+              <label for="startdate"> Leave Start Date</label>
+            </div>
+            <div class="col-75">
+              <input type="date" id="startdate" name="startdate" >
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-25">
+              <label for="startdate"> Leave End Date</label>
+            </div>
+            <div class="col-75">
+              <input type="date" id="enddate" name="enddate" >
+            </div>
+          </div>
+
+          
+          <div class="row">
+            <div class="col-25">
+              <label for="enddate"> Total Days</label>
+            </div>
+            <div class="col-75">
+              <input type="text" id="totaldays" name="totaldays" >
+            </div>
+          </div>
+
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Biometric ID</label>
+        </div>
+        <div class="col-75">
+          <input type="number" id="bioid" name="bioid" placeholder="2" min="1">
+        </div>
+      </div>
+     
+      <div class="row">
+        <div class="col-25">
+          <label >Leave Image</label>
+        </div>
+        <div class="col-75">
+        <input type="file" name="file" >
+        <input type="submit" name="submit" value="Upload" >
+            
+        </div>
+      </div>
+
+   
+    </form>
+  </div>
+
+</body>
+</html>

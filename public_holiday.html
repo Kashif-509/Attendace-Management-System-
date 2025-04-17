@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <link rel="favicon" href="assets/images/favicon.png">
+	<link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public_holiday.css">
+    
+    
+	<title> Leave Insertion Page</title>
+</head>
+<body>
+    <h1 id="heading" >PUBLIC HOLIDAY RECORD</h1>
+<div class="container">
+    <form action="public_holiday.php" method="post" >
+        <div class="row">
+            <div class="col-25">
+              <label for="fname">Sr.No</label>
+            </div>
+            <div class="col-75">
+              <input type="number" id="serialnumber" name="serialnumber" placeholder="1" min="1" max="60">
+              </div>
+          </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="fname">Holiday Title</label>
+        </div>
+        <div class="col-75">
+          <input type="text" id="holidaytitle" name="holidaytitle" placeholder="12 Rabiulawal..">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+          <label for="holidaydate">Holiday Date</label>
+        </div>
+        <div class="col-75">
+          <input type="date" id="holidaydate" name="holidaydate" >
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-25">
+          <label for="subject">Comment</label>
+        </div>
+        <div class="col-75">
+          <textarea id="comment" name="holidaycomment" placeholder="Write something.." style="height:50px"></textarea>
+        </div>
+      </div>
+      <div class="row">
+        <input type="submit" value="submit" name="submit">
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>
